@@ -43,7 +43,6 @@ filteredwholesetactivitydesc <- subset(filteredwholesetactivitydesc, select = -c
 # Naming conventions of variable names as explained in the course
 feature_metadata_filter$V2 <- gsub("-", "", tolower(feature_metadata_filter$V2))
 colnames(filteredwholesetactivitydesc) <- c(as.vector(feature_metadata_filter$V2), "subject", "activity")
-
 #
 # 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 #
