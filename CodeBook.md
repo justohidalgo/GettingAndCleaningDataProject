@@ -36,6 +36,11 @@ A pre-processed dataset (steps 1-4 of the project requirements) is obtained by m
 
 After processing, the final dataset has 10,299 observations and 88 columns (86 + activity and subject per observation).
 
+As per naming conventions for variable names, the following have been observed:
+- All lower case when possible
+- Descriptive when possible
+- Not duplicated
+- Not to have underscores or dots or whitespaces
 
 Tidy dataset
 -----------

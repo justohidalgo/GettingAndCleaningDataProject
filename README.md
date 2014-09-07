@@ -69,7 +69,12 @@ For this I used the merge function that easily allowed me to show the activity d
 
 It was obvious after step #3 that step #4 was going to be required. All names are quite ugly! 
 I needed to remember how to add column names to data frames, but once I found out it was by using the colnames function, it was easy, using the feature_metadata_filter data frame to obtain the vector of names plus the activity and subject headers.
-                                                                                                                                                                                                                                                                            
+
+I used the Naming conventions of variable names as explained in the course.
+
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+
 The clue here to me was that we needed to create a tidy data set. Based on what was shown at the swirl courses, this meant that aggregate was the function to use, where the "average" (or mean) the action to execute. 
 
 I only realized after reading the coursera forum that I needed to get rid of the latest two columns, subject and activity, as the mean of those make no sense.

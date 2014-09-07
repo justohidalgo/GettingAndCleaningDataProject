@@ -40,6 +40,8 @@ filteredwholesetactivitydesc <- subset(filteredwholesetactivitydesc, select = -c
 #
 # 4. Appropriately labels the data set with descriptive variable names.
 #
+# Naming conventions of variable names as explained in the course
+feature_metadata_filter$V2 <- gsub("-", "", tolower(feature_metadata_filter$V2))
 colnames(filteredwholesetactivitydesc) <- c(as.vector(feature_metadata_filter$V2), "subject", "activity")
 
 #
